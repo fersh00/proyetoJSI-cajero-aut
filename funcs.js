@@ -30,17 +30,11 @@ function seleccionaUsuario(cuentas, nom, ape) {
     return seleccion; 
 }
 
-usuarioActal = seleccionaUsuario(cuentas, 'Miguel', 'Cabrera');
-
-console.log(usuarioActal);
-
 //Funcion que consulta el saldo del usuario
 
 function consultarSaldo(user) {
     return user.saldo;    
 }
-
-
 
 //Funcion que agrega saldo
 
@@ -56,6 +50,11 @@ function restaSaldo(user,  monto) {
     return user.saldo;
 }
 
+
+//Pruebas con Quokka
+
+usuarioActal = seleccionaUsuario(cuentas, 'Miguel', 'Cabrera');
+console.log(usuarioActal);
 console.log(consultarSaldo(usuarioActal));
 console.log(ingresaSaldo(usuarioActal, 500));
 console.log(restaSaldo(usuarioActal, 50));
